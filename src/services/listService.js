@@ -11,11 +11,12 @@ const listService = {
     });
   },
 
-  async updateList(id, { title }) {
+  async updateList(id, { title, color }) {
     const list = await List.findByPk(id);
     if (!list) return null;
     
     if (title !== undefined) list.title = title;
+    if (color !== undefined) list.color = color;
     await list.save();
     return list;
   },

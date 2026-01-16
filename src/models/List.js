@@ -19,6 +19,11 @@ module.exports = (sequelize) => {
       allowNull: false,
       defaultValue: 0,
     },
+    color: {
+      type: DataTypes.STRING(50),
+      allowNull: true,
+      defaultValue: null,
+    },
     boardId: {
       type: DataTypes.UUID,
       allowNull: false,
