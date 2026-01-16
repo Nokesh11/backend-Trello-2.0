@@ -19,6 +19,8 @@ module.exports = {
         require: true,
         rejectUnauthorized: false,
       },
+      // Force IPv4
+      family: 4,
     },
     define: {
       timestamps: true,
